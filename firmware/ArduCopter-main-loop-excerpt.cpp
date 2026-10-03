@@ -7,7 +7,7 @@
  *
  * This file is NOT original code by the project team. It is an excerpt from the
  * project's code appendix, kept here to document how the flight software is structured
- * and where the team's tuning (config/tuned-parameters.csv) takes effect.
+ * and where my tuning (config/tuned-parameters.csv) takes effect.
  * Comments marked "// [project]" were added for this repository.
  */
 
