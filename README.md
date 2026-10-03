@@ -167,7 +167,6 @@ The channels were calibrated in Mission Planner to roughly 1100–1900 µs.
 - **ESCs.** Each ESC was calibrated to the receiver's throttle range (full stick, connect battery, two beeps, zero throttle, confirmation tone).
 - **Motors.** Motor order and spin direction were verified. M1 and M3 spin counter-clockwise; M2 and M4 spin clockwise, so their torques balance.
 
-<p align="center"><img src="docs/images/13-3dr-telemetry-config.png" width="560" alt="3DR radio configuration"></p>
 
 ---
 

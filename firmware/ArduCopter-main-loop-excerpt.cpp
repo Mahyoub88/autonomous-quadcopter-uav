@@ -5,7 +5,7 @@
  *          APM 2.6 flight controller on this vehicle.
  * License: GNU GPL v3 — Copyright (c) the ArduPilot Dev Team. https://github.com/ArduPilot/ardupilot
  *
- * This file is NOT original code by the project team. It is an excerpt from the
+ * This file is NOT original code by Mohammed Mahyoub. It is an excerpt from the
  * project's code appendix, kept here to document how the flight software is structured
  * and where my tuning (config/tuned-parameters.csv) takes effect.
  * Comments marked "// [project]" were added for this repository.
