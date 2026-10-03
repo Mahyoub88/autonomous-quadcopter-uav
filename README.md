@@ -1,10 +1,12 @@
 # Autonomous Quadcopter UAV — Flight Control, Telemetry & FPV
 
+**Project author and sole implementer:** Mohammed Mahyoub.
+
 An autonomous quadcopter built around **ArduPilot (APM 2.6)**. It flies GPS waypoint missions, sends **MAVLink** telemetry to a ground control station, protects itself with radio and geofence failsafes, and streams live **5.8 GHz** video for remote surveillance.
 
-The team assembled, calibrated, tuned and flight-tested the vehicle across seven flight modes. Every flight fault was root-caused from the dataflash logs and fixed on the vehicle.
+I assembled, calibrated, tuned and flight-tested the vehicle across seven flight modes. Every flight fault was root-caused from the dataflash logs and fixed on the vehicle.
 
-> **Team project.** The work covered propulsion sizing, airframe and electronics integration, sensor calibration, PID tuning, flight-mode and failsafe testing, telemetry and video systems, and technical documentation.
+> **Independent project.** The work covered propulsion sizing, airframe and electronics integration, sensor calibration, PID tuning, flight-mode and failsafe testing, telemetry and video systems, and technical documentation.
 
 **Stack:** ArduPilot / ArduCopter · APM 2.6 (ATmega2560 + MPU6000) · MAVLink · Mission Planner · DroidPlanner · 3DR Radio 433 MHz · uBlox NEO-6M GPS · PID control · eCalc
 
@@ -90,7 +92,7 @@ The build ran in two stages. The first stage covered design and construction. Th
 
 ## Propulsion sizing (eCalc)
 
-The team entered the frame, battery, 30A ESCs (measured at 32 g each), DJI 2212/920KV motors and propellers into eCalc xcopterCalc. They then compared propeller options at the same all-up weight:
+I entered the frame, battery, 30A ESCs (measured at 32 g each), DJI 2212/920KV motors and propellers into eCalc xcopterCalc. I then compared propeller options at the same all-up weight:
 
 | Propeller | All-up weight | Hover throttle | Est. hover time | Notes |
 |---|---|---|---|---|
@@ -114,7 +116,7 @@ Each component was tested on its own before integration.
 
 ### Barometer and sonar
 
-The barometer readings drifted with the weather and airflow. The sonar was steady at short range (readings held at 43–44 cm). From these tests the team set the altitude strategy used in flight:
+The barometer readings drifted with the weather and airflow. The sonar was steady at short range (readings held at 43–44 cm). From these tests I set the altitude strategy used in flight:
 
 - below 7 m, sonar plus barometer;
 - above 7 m, barometer only.
@@ -161,7 +163,7 @@ The channels were calibrated in Mission Planner to roughly 1100–1900 µs.
 
 ### 3DR telemetry, ESCs and motors
 
-- **Telemetry.** The 3DR radios on the vehicle and the ground station were set to the same frequency and data rate. The team picked the band that had the least noise. Measured range was about 400 m.
+- **Telemetry.** The 3DR radios on the vehicle and the ground station were set to the same frequency and data rate. I picked the band that had the least noise. Measured range was about 400 m.
 - **ESCs.** Each ESC was calibrated to the receiver's throttle range (full stick, connect battery, two beeps, zero throttle, confirmation tone).
 - **Motors.** Motor order and spin direction were verified. M1 and M3 spin counter-clockwise; M2 and M4 spin clockwise, so their torques balance.
 
@@ -176,7 +178,7 @@ The APM 2.6 runs **ArduCopter** firmware. Mission Planner on the laptop and Droi
 - `setup()` initialises the board, loads parameters from EEPROM and starts the scheduler.
 - `loop()` runs at 100 Hz, paced by MPU6000 samples. It calls `fast_loop()` for attitude, the rate controllers and motor output, then runs the scheduled tasks: RC input, GPS, barometer/sonar, navigation, telemetry and logging.
 
-See the annotated excerpt in [`firmware/ArduCopter-main-loop-excerpt.cpp`](firmware/ArduCopter-main-loop-excerpt.cpp). It is ArduPilot code (GPLv3), included to show where the team's tuning and fixes take effect.
+See the annotated excerpt in [`firmware/ArduCopter-main-loop-excerpt.cpp`](firmware/ArduCopter-main-loop-excerpt.cpp). It is ArduPilot code (GPLv3), included to show where my tuning and fixes take effect.
 
 ```cpp
 // Main loop — 100 Hz
@@ -308,7 +310,7 @@ The final values (full list in [`config/tuned-parameters.csv`](config/tuned-para
 
 The video chain runs from the camera through the MinimOSD to the 5.8 GHz transmitter, then to the receiver and finally the display:
 
-- The team built a camera video-out cable from a 10-pin mini-USB connector with a 100 kΩ resistor. The resistor switches the camera into analog video-out mode.
+- I built a camera video-out cable from a 10-pin mini-USB connector with a 100 kΩ resistor. The resistor switches the camera into analog video-out mode.
 - The MinimOSD overlays telemetry data on the live video.
 - The transmitter and receiver were set to the same channel (channel 3 of 8).
 - Live video was verified in two stages: first on a TV, then on a laptop through an AV-to-USB capture device.
