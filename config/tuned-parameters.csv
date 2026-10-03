@@ -1,0 +1,30 @@
+name,value,unit,description,defined_in
+FS_BATT_VOLTAGE,9.2,V,Failsafe battery voltage,Parameters.pde
+RTL_ALT_FINAL,15,m,RTL final altitude,Parameters.pde
+LAND_SPEED,40,cm/s,Descent speed for the final stage of landing,Parameters.pde
+RC_FEEL,100,,RC feel for roll/pitch (vehicle response to pilot input),Parameters.pde
+smoothing_gain,12,,Stabilize smoothing (2 = very sluggish; 12 = very crisp),Attitude.pde
+_rate_bf_ff_enabled,1,,Body-frame rate feed-forward enabled,AC_AttitudeControl.h
+GRAVITY,9.80665,m/s^2,Gravity constant,AP_Math.h
+STABILIZE_ROLL_P,4.50,,Stabilize (angle controller) gain - roll,config.h
+STABILIZE_PITCH_P,4.50,,Stabilize (angle controller) gain - pitch,config.h
+STABILIZE_YAW_P,4.50,,Stabilize (angle controller) gain - yaw,config.h
+RATE_ROLL_P,0.15,,Rate controller - roll,config.h
+RATE_ROLL_I,0.10,,Rate controller - roll,config.h
+RATE_ROLL_D,0.004,,Rate controller - roll,config.h
+RATE_ROLL_IMAX,1000,,Rate controller - roll,config.h
+RATE_PITCH_P,0.15,,Rate controller - pitch,config.h
+RATE_PITCH_I,0.10,,Rate controller - pitch,config.h
+RATE_PITCH_D,0.004,,Rate controller - pitch,config.h
+RATE_PITCH_IMAX,500,,Rate controller - pitch,config.h
+RATE_YAW_P,0.20,,Rate controller - yaw,config.h
+RATE_YAW_I,0.02,,Rate controller - yaw,config.h
+RATE_YAW_D,0.00,,Rate controller - yaw,config.h
+RATE_YAW_IMAX,1000,,Rate controller - yaw,config.h
+ALT_HOLD_P,1.00,,Altitude hold controller gain,config.h
+THROTTLE_RATE_P,6.00,,Throttle rate controller gain,config.h
+THROTTLE_ACCEL_P,0.75,,Throttle acceleration controller,config.h
+THROTTLE_ACCEL_I,1.50,,Throttle acceleration controller,config.h
+THROTTLE_ACCEL_D,0.00,,Throttle acceleration controller,config.h
+THROTTLE_ACCEL_IMAX,500,,Throttle acceleration controller,config.h
+COMPASS_DEC,2.11 E,deg,Local magnetic declination entered after the Auto-mode heading investigation,Mission Planner
