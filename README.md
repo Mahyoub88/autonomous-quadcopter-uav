@@ -1,12 +1,20 @@
 # Autonomous Quadcopter UAV — Flight Control, Telemetry & FPV
 
-**Project author and sole implementer:** Mohammed Mahyoub.
+## Illustrated engineering guide
+
+[Read the full engineering guide](docs/engineering-guide.md) for architecture, workflow, design rationale, evidence notes and the source gallery.
+
+![Engineering overview](docs/overview/architecture.svg)
+
+*Explanatory diagram added for this write-up.*
+
+**Team project — contributor:** Mohammed Mahyoub. See the documented scope below.
 
 An autonomous quadcopter built around **ArduPilot (APM 2.6)**. It flies GPS waypoint missions, sends **MAVLink** telemetry to a ground control station, protects itself with radio and geofence failsafes, and streams live **5.8 GHz** video for remote surveillance.
 
-I assembled, calibrated, tuned and flight-tested the vehicle across seven flight modes. Every flight fault was root-caused from the dataflash logs and fixed on the vehicle.
+The team assembled, calibrated, tuned and flight-tested the vehicle across seven flight modes. Every flight fault was root-caused from the dataflash logs and fixed on the vehicle.
 
-> **Independent project.** The work covered propulsion sizing, airframe and electronics integration, sensor calibration, PID tuning, flight-mode and failsafe testing, telemetry and video systems, and technical documentation.
+> **Team project.** The work covered propulsion sizing, airframe and electronics integration, sensor calibration, PID tuning, flight-mode and failsafe testing, telemetry and video systems, and technical documentation.
 
 **Stack:** ArduPilot / ArduCopter · APM 2.6 (ATmega2560 + MPU6000) · MAVLink · Mission Planner · DroidPlanner · 3DR Radio 433 MHz · uBlox NEO-6M GPS · PID control · eCalc
 
