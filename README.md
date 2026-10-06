@@ -348,3 +348,11 @@ The project draws on a study of UAS communications:
 **Author:** Mohammed Mahyoub · [Portfolio](https://mahyoub88.github.io/) · [LinkedIn](https://www.linkedin.com/in/mohammed-mahyoub/) · [ORCID](https://orcid.org/0009-0003-5640-352X)
 
 *Flight software: [ArduPilot](https://github.com/ArduPilot/ardupilot) (GPLv3). Excerpts in `firmware/` keep their original licence.*
+
+## Illustrated project pages
+
+Project-specific diagrams, source media and implementation context:
+
+- [Autonomous Quadcopter UAV — Flight Control, Telemetry & FPV](https://mahyoub88.github.io/projects/proj-quadcopter-uav/)
+
+[Browse all engineering case studies](https://mahyoub88.github.io/projects/)
