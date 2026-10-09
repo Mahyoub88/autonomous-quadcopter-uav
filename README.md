@@ -1,46 +1,6 @@
 # Autonomous Quadcopter UAV — Flight Control, Telemetry & FPV
 
-## Implementation at a glance
-
-A team-built and flight-tested ArduPilot quadcopter integrating propulsion, navigation, telemetry, failsafes and a live video chain.
-
-| Responsibility | Documented implementation |
-|---|---|
-| Integration | F450 airframe, APM 2.6, propulsion, GPS/compass and power distribution. |
-| Control | Calibration and PID tuning precede flight-mode and failsafe checks. |
-| Diagnosis | Dataflash logs document vibration, sonar noise and heading problems and the corresponding corrections. |
-| Ground link | MAVLink telemetry links the aircraft and ground station; a separate 5.8 GHz chain carries FPV video. |
-
-### Source implementation gallery
-
-![Original project system diagram](docs/images/02-system-block-diagram.png)
-
-*Original project system diagram.*
-
-![Original test log — vibration before the documented correction](docs/images/15-loiter-vibration-before.png)
-
-*Original test log — vibration before the documented correction.*
-
-![Original test log — vibration after the documented correction](docs/images/16-loiter-vibration-after.png)
-
-*Original test log — vibration after the documented correction.*
-
-![Original flight-test evidence — corrected heading behaviour](docs/images/21-auto-heading-corrected.jpg)
-
-*Original flight-test evidence — corrected heading behaviour.*
-
-### Architecture and implementation workflow
-
-![Explanatory functional architecture](docs/overview/architecture.svg)
-
-![Explanatory engineering workflow](docs/overview/workflow.svg)
-
-*Documentation diagrams based on the project scope; original source images and results are captioned separately.*
-
-[Full engineering guide](docs/engineering-guide.md) · [Illustrated case study](https://mahyoub88.github.io/projects/proj-quadcopter-uav/)
-
----
-
+[Read case study](https://mahyoub88.github.io/projects/proj-quadcopter-uav/) · [Project index](docs/PROJECTS.md) · [Engineering guide](docs/engineering-guide.md)
 
 
 **Team project — contributor:** Mohammed Mahyoub. See the documented scope below.
@@ -380,14 +340,6 @@ The project draws on a study of UAS communications:
 
 ---
 
-**Author:** Mohammed Mahyoub · [Portfolio](https://mahyoub88.github.io/) · [LinkedIn](https://www.linkedin.com/in/mohammed-mahyoub/) · [ORCID](https://orcid.org/0009-0003-5640-352X)
+**Author:** Mohammed Mahyoub · [Portfolio](https://mahyoub88.github.io/projects/) · [LinkedIn](https://www.linkedin.com/in/mohammed-mahyoub/) · [ORCID](https://orcid.org/0009-0003-5640-352X)
 
 *Flight software: [ArduPilot](https://github.com/ArduPilot/ardupilot) (GPLv3). Excerpts in `firmware/` keep their original licence.*
-
-## Illustrated project pages
-
-Project-specific diagrams, source media and implementation context:
-
-- [Autonomous Quadcopter UAV — Flight Control, Telemetry & FPV](https://mahyoub88.github.io/projects/proj-quadcopter-uav/)
-
-[Browse all engineering case studies](https://mahyoub88.github.io/projects/)
